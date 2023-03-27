@@ -1,0 +1,27 @@
+{
+  "name": "jest-lib-training",
+  "version": "1.0.0",
+  "description": "A training for Jest (Javascript library)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-html-reporter": "^3.7.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  }
+}
